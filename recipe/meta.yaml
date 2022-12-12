@@ -1,5 +1,5 @@
 {% set name = "caf.toolkit" %}
-{% set version = "0.0.4" %}
+{% set version = "0.0.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/caf.toolkit-{{ version }}.tar.gz
-  sha256: afc2e04bc9bafc9c0da2423feceeccc9176cbd12bea110cd6937a201a583099f
+  sha256: ec18a2da8511c4f8bd6090bb207bf237a295d8de35e2138b94e3251dff03395c
 
 build:
   noarch: python
@@ -26,6 +26,8 @@ requirements:
     - pandas >=1.4.0
     - tqdm >=4.50.2
     - openpyxl >=3.0.5
+    - sparse >=0.13.0
+    - numba >=0.56.4
 
 test:
   imports:
