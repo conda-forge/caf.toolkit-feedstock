@@ -1,11 +1,11 @@
-About caf.toolkit
-=================
+About caf.toolkit-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/caf.toolkit-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/Transport-for-the-North/caf.toolkit
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/caf.toolkit-feedstock/blob/main/LICENSE.txt)
 
 Summary: A toolkit of transport planning and appraisal functionalities
 
