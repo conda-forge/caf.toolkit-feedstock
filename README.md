@@ -146,4 +146,5 @@ Feedstock Maintainers
 =====================
 
 * [@BenTaylor-TfN](https://github.com/BenTaylor-TfN/)
+* [@isaac-tfn](https://github.com/isaac-tfn/)
 
