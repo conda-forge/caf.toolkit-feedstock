@@ -1,5 +1,5 @@
 {% set name = "caf.toolkit" %}
-{% set version = "0.2.1" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/caf.toolkit-{{ version }}.tar.gz
-  sha256: 0a8ea978fbe1218b0e601aba1610e8d2d5409e11faa3a55915d4f6f4f7e13364
+  sha256: a231faf4baa82cbf244ec1bea3ce6d89576e07a5b2ca3734024eab3ab23d78a4
 
 build:
   noarch: python
@@ -43,7 +43,7 @@ about:
   home: https://github.com/Transport-for-the-North/caf.toolkit
   summary: A toolkit of transport planning and appraisal functionalities
   dev_url: https://github.com/Transport-for-the-North/caf.toolkit
-  license: GPL-3.0-only
+  license: TfN-License
   license_file: LICENSE
 
 extra:
