@@ -44,7 +44,7 @@ about:
   home: https://github.com/Transport-for-the-North/caf.toolkit
   summary: A toolkit of transport planning and appraisal functionalities
   dev_url: https://github.com/Transport-for-the-North/caf.toolkit
-  license: TfN-License
+  license: LicenseRef-TfN-License
   license_file: LICENSE
 
 extra:
