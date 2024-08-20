@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/caf.toolkit-fee
 
 Home: https://github.com/Transport-for-the-North/caf.toolkit
 
-Package license: TfN-License
+Package license: LicenseRef-TfN-License
 
 Summary: A toolkit of transport planning and appraisal functionalities
 
