@@ -1,19 +1,17 @@
 {% set name = "caf.toolkit" %}
-{% set version = "0.7.1" %}
-
+{% set version = "0.7.4" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/caf.toolkit-{{ version }}.tar.gz
-  sha256: abe600d82d654afcaaa43f2c19efbf5a5659f73a7f54de053457dfd21846db94
-
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/caf_toolkit-{{ version }}.tar.gz
+  sha256: 88ba7e52f8004161ac92bc588de25ce32d0df9f647c5ce0345f6ab9eab44d675
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
 requirements:
@@ -25,7 +23,7 @@ requirements:
   run:
     - python >=3.9
     - numpy >=1.19.0
-    - pandas >=1.4.0
+    - pandas >=2.0.0
     - tqdm >=4.50.2
     - sparse >=0.13.0, <0.15.0  # Error with conda recognising latest version number 15/01/24
     - pydantic >=2.5.0
