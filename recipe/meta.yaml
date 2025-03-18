@@ -1,19 +1,17 @@
 {% set name = "caf.toolkit" %}
-{% set version = "0.9.0" %}
-
+{% set version = "0.10.0" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
-
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/caf_toolkit-{{ version }}.tar.gz
-  sha256: 31c4ca19bfec31305c938bb96de081d0a6a89f59eae0342f208beb01d5f68269
-
+  sha256: 32655ee606e259c366af4d1640cca0fdf9a9876eedf97c5c5cc58b765a2d3aab
 build:
+  entry_points:
+    - caf.toolkit = caf.toolkit.__main__:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
-
 requirements:
   host:
     - python {{ python_min }}
@@ -29,12 +27,14 @@ requirements:
     - pydantic >=2.5.0
     - strictyaml >=1.6
     - psutil >=5.9.0
+    - openpyxl >=3.1.5
 
 test:
   imports:
     - caf.toolkit
   commands:
     - pip check
+    - caf.toolkit --help
   requires:
     - pip
     - python {{ python_min }}
