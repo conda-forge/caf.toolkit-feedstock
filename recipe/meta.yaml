@@ -1,11 +1,11 @@
 {% set name = "caf.toolkit" %}
-{% set version = "0.10.0" %}
+{% set version = "0.10.1" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/caf_toolkit-{{ version }}.tar.gz
-  sha256: 32655ee606e259c366af4d1640cca0fdf9a9876eedf97c5c5cc58b765a2d3aab
+  sha256: e46e5c67079a9a5fedc8332c7f12bedcb2add5c45d0929506abcf2f0e8f14996
 build:
   entry_points:
     - caf.toolkit = caf.toolkit.__main__:main
