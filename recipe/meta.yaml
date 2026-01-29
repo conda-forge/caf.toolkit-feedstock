@@ -1,5 +1,5 @@
 {% set name = "caf.toolkit" %}
-{% set python_min = "3.10" %}
+{% set python_min = "3.11" %}
 {% set version = "0.13.0" %}
 package:
   name: {{ name|lower }}
@@ -22,7 +22,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - numpy >=1.19.0
-    - pandas >=2.0.0
+    - pandas <3,>=2.0.0
     - tqdm >=4.50.2
     - sparse >=0.15.4
     - pydantic >=2.5.0
